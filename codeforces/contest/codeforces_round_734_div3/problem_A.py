@@ -9,6 +9,10 @@ def main():
 
     for _ in range(t):
         n = int(input())
+
+        print(n // 3 + (n % 3 == 1), n // 3 + (n % 3 == 2))
+
+        """
         rem = n % 3
         bs = (n - rem) // 3
 
@@ -18,7 +22,7 @@ def main():
             print(bs+1, bs)
         else:
             print(bs, bs+1)
-
+        """
 
 if __name__ == "__main__":
     main()
